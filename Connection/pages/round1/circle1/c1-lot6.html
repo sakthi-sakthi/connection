@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Connexion</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../../../resources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../resources/bootstrap/css/mystyle.css">
+
+<!-- jQuery library -->
+<script src="../../../resources/bootstrap/js/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#answer').hide();
+    $("#btnanswer").click(function(){
+        $("#answer").show();
+    });
+    var timeLeft = 30;
+	var elem = document.getElementById('timer');
+	var timerId = setInterval(countdown, 1000);
+
+	function countdown() {
+    if (timeLeft == -1) {
+    	alert("Times up!");
+        clearTimeout(timerId);
+        doSomething();
+    } else {
+        elem.innerHTML = timeLeft;
+        timeLeft--;
+    }
+   }
+});
+</script>
+<style>
+ul li{
+  display: inline;
+}
+</style> 
+</head>
+<body>
+		<div class="navbar">
+  			<h1>Don Bosco College</h1>
+			<h2>Tower'18</h2>
+		</div>
+
+		<div class="row" style="font-size:30px;">
+			<div class="col-md-9">
+				<div class="row">
+					<ul style="display-style:none;display:inline;">
+						<li><img src="./img/6/gate.jpg" width="400px" height="200px"/>&nbsp;&nbsp;&nbsp;</li>
+						<li><img src="./img/6/way.jpg" width="400px" height="200px"/> </li>
+					</ul>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-8">
+						<div>
+							<h6 id="answer" style="font-size: 50px;">Gateway</h6>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<button id="btnanswer" class="btn btn-success btn-block" style="width: 213px;height: 80px;font-size: 40px;">Answer</button>
+					</div>
+			</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<h1 id="timer" style="text-align: center;font-size: 100px;color: red;"></h1>
+					<p style="text-align: center;"">seconds remaining</p>
+				</div>
+				<br><br>
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<a href="./circle1-home.html"><img src="../../../resources/bootstrap/img/home2.jpeg" width="100px" height="70px" align="center"></a>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+			
+		</div>
+
+		<br>
+		
+	<br>
+
+		<div class="footer">
+			<br>
+  			<p>Don Bosco College</p>
+  			<p>Athanavur, Yelagiri hills.</p>
+		</div>	
+</body>
+<html>

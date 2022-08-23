@@ -1,0 +1,36 @@
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #33b4ff;
+   color: white;
+   text-align: center;
+   font-family: "Comic Sans MS";
+}
+.navbar {
+	background-color:#33b4ff; 
+	text-align:center;
+	color: white;
+	font-family: "Comic Sans MS";
+}
+
+body {
+        margin: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        /*recommend 1920 / 1080 max based on usage stats, use 100% to that point*/
+        width: 100%
+        max-width: 900px;
+        height: 100%;
+        max-height: 600px;
+        background:#fafafa;
+        -webkit-box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
+    }
+
+#answer{
+	text-align: center;
+	font-size: 100px;
+}
